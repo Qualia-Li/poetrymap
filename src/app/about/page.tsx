@@ -72,7 +72,7 @@ export default function AboutPage() {
               <li><span className="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span><strong>河流</strong>：黄河、长江、渭河、淮河、汉水等大河</li>
               <li><span className="inline-block w-3 h-3 bg-cyan-500 rounded-full mr-2"></span><strong>湖泊</strong>：洞庭湖、太湖、镜湖、青海等湖泊</li>
               <li><span className="inline-block w-3 h-3 bg-purple-500 rounded-full mr-2"></span><strong>地区</strong>：江南、关中、巴蜀、楚地等地理区域</li>
-              <li><span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span><strong>域外</strong>：匈奴、日本、龟兹、吐蕃等境外地区</li>
+              <li><span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span><strong>域外</strong>：匈奴、日本、龟兹、吐蕃等唐代疆域以外的地区（注：此分类依据唐代疆域，与现代中国领土无关）</li>
               <li><span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span><strong>名胜</strong>：黄鹤楼、鹳雀楼等著名建筑</li>
             </ul>
           </section>

@@ -85,7 +85,7 @@ export default function LocationsPage() {
         </div>
 
         {/* Type Legend */}
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="flex flex-wrap gap-3 mb-4">
           {Object.entries(typeNames).map(([type, name]) => (
             <div key={type} className="flex items-center gap-2">
               <span className={`w-3 h-3 rounded-full ${typeColors[type]}`}></span>
@@ -93,6 +93,9 @@ export default function LocationsPage() {
             </div>
           ))}
         </div>
+        <p className="text-xs text-gray-500 mb-8">
+          注：「域外」指唐代疆域以外的地区，此分类依据唐代疆域划分，与现代中国领土无关。
+        </p>
 
         {/* Top 10 */}
         <section className="mb-12">
