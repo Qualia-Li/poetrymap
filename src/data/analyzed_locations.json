@@ -1327,7 +1327,8 @@
       "type": "city",
       "aliases": [
         "汉口",
-        "鄂州"
+        "鄂州",
+        "黄鹤楼"
       ],
       "modernName": "武汉",
       "coordinates": [
@@ -1494,6 +1495,33 @@
             "清渭东流剑阁深，去住彼此无消息。"
           ],
           "keyword": "剑阁"
+        }
+      ]
+    },
+    {
+      "id": "puzhou",
+      "name": "蒲州",
+      "type": "city",
+      "aliases": [
+        "鹳雀楼",
+        "蒲坂"
+      ],
+      "modernName": "永济",
+      "coordinates": [
+        110.45,
+        34.87
+      ],
+      "description": "唐代河中府治所，位于今山西永济，鹳雀楼所在地",
+      "poems": [
+        {
+          "poem_id": 236,
+          "title": "登鹳雀楼",
+          "author": "王之涣",
+          "content": "白日依山尽，黄河入海流。\n欲穷千里目，更上一层楼。",
+          "relevant_lines": [
+            "欲穷千里目，更上一层楼。"
+          ],
+          "keyword": "鹳雀楼"
         }
       ]
     },
