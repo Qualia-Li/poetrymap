@@ -25,7 +25,7 @@ export interface Location {
   type: string
   aliases: string[]
   modernName: string
-  coordinates: [number, number]
+  coordinates: number[]
   description: string
   poems: Array<{
     poem_id: number
