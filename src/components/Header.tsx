@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 interface HeaderProps {
   searchQuery: string
@@ -34,7 +35,14 @@ export default function Header({
       <div className="hidden md:flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-wider">唐诗三百首 · 地名地图</h1>
-          <p className="text-sm opacity-80 mt-1">探索诗人笔下的山川河流与历史地理</p>
+          <div className="flex items-center gap-4 mt-1">
+            <p className="text-sm opacity-80">探索诗人笔下的山川河流与历史地理</p>
+            <nav className="flex gap-3 text-sm">
+              <Link href="/locations" className="opacity-80 hover:opacity-100 hover:underline">地点</Link>
+              <Link href="/poems" className="opacity-80 hover:opacity-100 hover:underline">诗词</Link>
+              <Link href="/about" className="opacity-80 hover:opacity-100 hover:underline">关于</Link>
+            </nav>
+          </div>
         </div>
 
         <div className="flex items-center gap-4">
@@ -101,6 +109,18 @@ export default function Header({
             <h1 className="text-lg font-bold tracking-wider">唐诗三百首 · 地名地图</h1>
           </div>
           <div className="flex items-center gap-2">
+            <Link
+              href="/locations"
+              className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition text-xs"
+            >
+              地点
+            </Link>
+            <Link
+              href="/poems"
+              className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition text-xs"
+            >
+              诗词
+            </Link>
             <button
               onClick={() => setShowFilters(!showFilters)}
               className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition"

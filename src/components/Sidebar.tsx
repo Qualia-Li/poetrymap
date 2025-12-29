@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import type { Location } from '@/types'
 
 interface SidebarProps {
@@ -120,13 +121,17 @@ export default function Sidebar({
             <div className="text-sm font-medium text-text/80 mb-2">类型图例</div>
             <div className="grid grid-cols-2 gap-2">
               {Object.entries(typeNames).map(([type, name]) => (
-                <div key={type} className="legend-item text-sm">
+                <Link
+                  key={type}
+                  href={`/locations/type/${type}`}
+                  className="legend-item text-sm hover:bg-white/50 rounded px-1 -mx-1 transition"
+                >
                   <div
                     className="legend-dot"
                     style={{ backgroundColor: typeColors[type] }}
                   />
-                  <span>{name}</span>
-                </div>
+                  <span className="hover:text-primary">{name}</span>
+                </Link>
               ))}
             </div>
           </div>
