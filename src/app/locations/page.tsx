@@ -87,10 +87,14 @@ export default function LocationsPage() {
         {/* Type Legend */}
         <div className="flex flex-wrap gap-3 mb-4">
           {Object.entries(typeNames).map(([type, name]) => (
-            <div key={type} className="flex items-center gap-2">
+            <Link
+              key={type}
+              href={`/locations/type/${type}`}
+              className="flex items-center gap-2 hover:bg-white/50 px-2 py-1 rounded transition"
+            >
               <span className={`w-3 h-3 rounded-full ${typeColors[type]}`}></span>
-              <span className="text-sm">{name} ({stats.byType[type] || 0})</span>
-            </div>
+              <span className="text-sm hover:text-primary">{name} ({stats.byType[type] || 0})</span>
+            </Link>
           ))}
         </div>
         <p className="text-xs text-gray-500 mb-8">

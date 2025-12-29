@@ -68,7 +68,9 @@ export default function PoemsPage() {
         {sortedAuthors.map(([author, authorPoems]) => (
           <section key={author} className="mb-8">
             <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-              {author}
+              <Link href={`/poems/author/${encodeURIComponent(author)}`} className="hover:underline">
+                {author}
+              </Link>
               <span className="text-sm font-normal text-gray-500">({authorPoems.length}首)</span>
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
