@@ -1,9 +1,24 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: '唐诗三百首地名地图',
-  description: '探索唐诗三百首中的地理意象，感受诗人笔下的山川河流',
+  description: '唐诗三百首地名地图是一个交互式可视化项目，通过地图展示唐诗中提及的城市、山川、河流、湖泊等地名，让读者从地理视角重新理解唐诗。',
+  keywords: ['唐诗三百首', '唐诗', '地名', '地图', '可视化', '长安', '黄河', '长江', '李白', '杜甫', '王维', '中国古诗', '唐代', '地理'],
+  authors: [{ name: 'Qualia Li' }],
+  metadataBase: new URL('https://poetrymap.quanl.ai'),
+  alternates: {
+    canonical: 'https://poetrymap.quanl.ai',
+  },
+  openGraph: {
+    title: '唐诗三百首地名地图',
+    description: '唐诗三百首地名地图是一个交互式可视化项目，通过地图展示唐诗中提及的城市、山川、河流、湖泊等地名，让读者从地理视角重新理解唐诗。',
+    siteName: '唐诗三百首地名地图',
+    locale: 'zh_CN',
+    type: 'website',
+    url: 'https://poetrymap.quanl.ai',
+  },
 }
 
 export default function RootLayout({
@@ -21,7 +36,10 @@ export default function RootLayout({
           crossOrigin=""
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   )
 }

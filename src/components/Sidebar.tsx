@@ -41,7 +41,7 @@ export default function Sidebar({
   const sortedLocations = [...locations].sort((a, b) => b.poems.length - a.poems.length)
 
   return (
-    <aside className="w-96 sidebar flex flex-col h-full overflow-hidden">
+    <aside className="w-[28rem] sidebar flex flex-col h-full overflow-hidden">
       {/* 标签切换 */}
       <div className="flex border-b border-secondary/30">
         <button

@@ -52,12 +52,19 @@ body {
 .marker-landmark { background: #FFD700; }
 
 /* Popup styles */
-.poem-popup {
-  max-width: 400px;
+.poem-popup-container .leaflet-popup-content-wrapper {
+  min-width: 320px;
+  max-width: 420px;
+  border-radius: 12px;
 }
 
-.poem-popup .leaflet-popup-content {
-  margin: 12px;
+.poem-popup-container .leaflet-popup-content {
+  margin: 16px;
+  width: auto !important;
+}
+
+.poem-popup {
+  min-width: 300px;
 }
 
 .poem-popup h3 {
@@ -73,6 +80,8 @@ body {
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .poem-title {
