@@ -26,6 +26,7 @@ export default function MapPageClient({ locations }: MapPageClientProps) {
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null)
   const [filterType, setFilterType] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState('')
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const filteredLocations = locations.filter(loc => {
     const typeMatch = filterType === 'all' || loc.type === filterType
@@ -36,6 +37,11 @@ export default function MapPageClient({ locations }: MapPageClientProps) {
     return typeMatch && searchMatch
   })
 
+  const handleLocationSelect = (location: Location) => {
+    setSelectedLocation(location)
+    setSidebarOpen(true) // Open sidebar on mobile when location selected
+  }
+
   return (
     <div className="h-screen flex flex-col">
       <Header
@@ -45,19 +51,21 @@ export default function MapPageClient({ locations }: MapPageClientProps) {
         setFilterType={setFilterType}
       />
 
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex overflow-hidden relative">
         <div className="flex-1 relative">
           <MapComponent
             locations={filteredLocations}
             selectedLocation={selectedLocation}
-            onLocationSelect={setSelectedLocation}
+            onLocationSelect={handleLocationSelect}
           />
         </div>
 
         <Sidebar
           selectedLocation={selectedLocation}
           locations={filteredLocations}
-          onLocationSelect={setSelectedLocation}
+          onLocationSelect={handleLocationSelect}
+          isOpen={sidebarOpen}
+          onToggle={() => setSidebarOpen(!sidebarOpen)}
         />
       </div>
     </div>

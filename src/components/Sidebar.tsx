@@ -1,12 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import type { Location } from '@/app/page'
+import type { Location } from '@/types'
 
 interface SidebarProps {
   selectedLocation: Location | null
   locations: Location[]
   onLocationSelect: (location: Location) => void
+  isOpen: boolean
+  onToggle: () => void
 }
 
 const typeColors: Record<string, string> = {
@@ -33,6 +35,8 @@ export default function Sidebar({
   selectedLocation,
   locations,
   onLocationSelect,
+  isOpen,
+  onToggle,
 }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<'list' | 'detail'>('list')
   const [expandedPoem, setExpandedPoem] = useState<number | null>(null)
@@ -41,7 +45,42 @@ export default function Sidebar({
   const sortedLocations = [...locations].sort((a, b) => b.poems.length - a.poems.length)
 
   return (
-    <aside className="w-[28rem] sidebar flex flex-col h-full overflow-hidden">
+    <>
+      {/* Mobile toggle button */}
+      <button
+        onClick={onToggle}
+        className="md:hidden fixed bottom-4 right-4 z-[1001] bg-primary text-white p-3 rounded-full shadow-lg"
+        aria-label={isOpen ? '关闭列表' : '打开列表'}
+      >
+        {isOpen ? (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        ) : (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        )}
+      </button>
+
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/50 z-[999]"
+          onClick={onToggle}
+        />
+      )}
+
+      {/* Sidebar - desktop: side panel, mobile: bottom sheet */}
+      <aside className={`
+        md:w-[28rem] md:relative md:translate-y-0
+        fixed bottom-0 left-0 right-0 z-[1000]
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-y-0' : 'translate-y-full md:translate-y-0'}
+        h-[70vh] md:h-full
+        sidebar flex flex-col overflow-hidden
+        rounded-t-2xl md:rounded-none
+      `}>
       {/* 标签切换 */}
       <div className="flex border-b border-secondary/30">
         <button
@@ -262,5 +301,6 @@ export default function Sidebar({
         </div>
       )}
     </aside>
+    </>
   )
 }

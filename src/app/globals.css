@@ -145,3 +145,40 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #CD853F;
 }
+
+/* Hide scrollbar for horizontal scroll on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .poem-popup-container .leaflet-popup-content-wrapper {
+    min-width: 260px;
+    max-width: calc(100vw - 40px);
+  }
+
+  .poem-popup {
+    min-width: 240px;
+  }
+
+  .poem-popup h3 {
+    font-size: 16px;
+  }
+
+  .poem-card {
+    padding: 10px;
+  }
+
+  .poem-title {
+    font-size: 13px;
+  }
+
+  .poem-content {
+    font-size: 12px;
+  }
+}
