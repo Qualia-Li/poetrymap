@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   description: '唐诗三百首地名地图是一个交互式可视化项目，通过地图展示唐诗中提及的城市、山川、河流、湖泊等地名，让读者从地理视角重新理解唐诗。',
   keywords: ['唐诗三百首', '唐诗', '地名', '地图', '可视化', '长安', '黄河', '长江', '李白', '杜甫', '王维', '中国古诗', '唐代', '地理'],
   authors: [{ name: 'Qualia Li' }],
-  metadataBase: new URL('https://poetrymap.quanl.ai'),
+  metadataBase: new URL('https://poetrymap.quanl.ai/'),
   alternates: {
-    canonical: 'https://poetrymap.quanl.ai',
+    canonical: 'https://poetrymap.quanl.ai/',
   },
   openGraph: {
     title: '唐诗三百首地名地图',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: '唐诗三百首地名地图',
     locale: 'zh_CN',
     type: 'website',
-    url: 'https://poetrymap.quanl.ai',
+    url: 'https://poetrymap.quanl.ai/',
   },
 }
 
