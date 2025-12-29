@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 47, 24, 16;
+  --background-rgb: 253, 245, 230;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Noto Serif SC', serif;
+}
+
+/* Leaflet customizations */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  font-family: 'Noto Serif SC', serif;
+}
+
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+.marker-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.marker-icon span {
+  transform: rotate(45deg);
+  font-size: 12px;
+}
+
+.marker-city { background: #DC143C; }
+.marker-mountain { background: #228B22; }
+.marker-river { background: #4169E1; }
+.marker-lake { background: #00CED1; }
+.marker-region { background: #9370DB; }
+.marker-foreign { background: #FF8C00; }
+.marker-landmark { background: #FFD700; }
+
+/* Popup styles */
+.poem-popup {
+  max-width: 400px;
+}
+
+.poem-popup .leaflet-popup-content {
+  margin: 12px;
+}
+
+.poem-popup h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #8B4513;
+  margin-bottom: 8px;
+}
+
+.poem-card {
+  background: linear-gradient(to bottom, #FFF8DC, #FAEBD7);
+  border: 1px solid #D2B48C;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.poem-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B4513;
+}
+
+.poem-author {
+  font-size: 12px;
+  color: #A0522D;
+  margin-bottom: 4px;
+}
+
+.poem-content {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #2F1810;
+  white-space: pre-line;
+}
+
+.highlighted-line {
+  background: rgba(255, 215, 0, 0.3);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: linear-gradient(135deg, #FDF5E6 0%, #FAF0E6 100%);
+  border-left: 3px solid #D2691E;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF5E6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D2B48C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CD853F;
+}
