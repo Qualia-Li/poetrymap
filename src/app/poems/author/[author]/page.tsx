@@ -54,7 +54,7 @@ export default async function AuthorPage({ params }: Props) {
   })
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <header className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div>
@@ -71,7 +71,7 @@ export default async function AuthorPage({ params }: Props) {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-8">
+      <main className="max-w-4xl mx-auto px-6 py-8 flex-1">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:text-primary">首页</Link>
@@ -149,7 +149,13 @@ export default async function AuthorPage({ params }: Props) {
         </div>
 
         {/* Back */}
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center flex justify-center gap-4">
+          <Link
+            href="/"
+            className="inline-block px-6 py-2 bg-secondary text-white rounded-full hover:bg-primary transition"
+          >
+            返回地图
+          </Link>
           <Link
             href="/poems"
             className="inline-block px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition"

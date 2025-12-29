@@ -11,7 +11,7 @@ export default function AboutPage() {
   const stats = getLocationStats()
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <header className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div>
@@ -29,7 +29,20 @@ export default function AboutPage() {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-8">
+      <main className="max-w-4xl mx-auto px-6 py-8 flex-1">
+        {/* Back to map */}
+        <div className="mb-6">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-primary hover:underline"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            返回地图
+          </Link>
+        </div>
+
         <article className="prose prose-lg max-w-none">
           <h1 className="text-3xl font-bold text-primary mb-6">关于本项目</h1>
 

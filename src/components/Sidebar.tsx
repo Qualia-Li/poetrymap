@@ -231,7 +231,13 @@ export default function Sidebar({
                     )}
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <div className="poem-title">《{poem.title}》</div>
+                      <Link
+                        href={`/poems/${poem.poem_id}`}
+                        className="poem-title hover:underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        《{poem.title}》
+                      </Link>
                       <svg
                         className={`w-4 h-4 text-text/50 transition-transform ${
                           expandedPoem === poem.poem_id ? 'rotate-180' : ''
