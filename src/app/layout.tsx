@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://poetrymap.quanl.ai/',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     title: '唐诗三百首地名地图',
     description: '唐诗三百首地名地图是一个交互式可视化项目，通过地图展示唐诗中提及的城市、山川、河流、湖泊等地名，让读者从地理视角重新理解唐诗。',
