@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import type { Location } from '@/app/page'
+import type { Location } from '@/types'
 
 interface MapComponentProps {
   locations: Location[]

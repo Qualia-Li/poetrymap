@@ -37,9 +37,11 @@ export default function MapPageClient({ locations }: MapPageClientProps) {
     return typeMatch && searchMatch
   })
 
-  const handleLocationSelect = (location: Location) => {
+  const handleLocationSelect = (location: Location | null) => {
     setSelectedLocation(location)
-    setSidebarOpen(true) // Open sidebar on mobile when location selected
+    if (location) {
+      setSidebarOpen(true) // Open sidebar on mobile when location selected
+    }
   }
 
   return (
