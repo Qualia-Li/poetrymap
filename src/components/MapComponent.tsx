@@ -165,6 +165,11 @@ export default function MapComponent({
 
       marker.on('click', () => {
         onLocationSelect(location)
+        // On mobile, don't open popup - let sidebar handle it
+        const isMobile = window.innerWidth < 768
+        if (isMobile) {
+          marker.closePopup()
+        }
       })
 
       marker.addTo(map)
@@ -179,7 +184,11 @@ export default function MapComponent({
     const marker = markersRef.current.get(selectedLocation.id)
     if (marker) {
       mapInstanceRef.current.setView(marker.getLatLng(), 7, { animate: true })
-      marker.openPopup()
+      // Only open popup on desktop
+      const isMobile = window.innerWidth < 768
+      if (!isMobile) {
+        marker.openPopup()
+      }
     }
   }, [selectedLocation])
 

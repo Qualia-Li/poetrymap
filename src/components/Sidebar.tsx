@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Location } from '@/types'
 
 interface SidebarProps {
@@ -40,6 +40,13 @@ export default function Sidebar({
 }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<'list' | 'detail'>('list')
   const [expandedPoem, setExpandedPoem] = useState<number | null>(null)
+
+  // Switch to detail tab when a location is selected (especially on mobile)
+  useEffect(() => {
+    if (selectedLocation) {
+      setActiveTab('detail')
+    }
+  }, [selectedLocation])
 
   // 按诗句数量排序
   const sortedLocations = [...locations].sort((a, b) => b.poems.length - a.poems.length)
