@@ -5066,6 +5066,156 @@
       ]
     },
     {
+      "id": "yueyanglou",
+      "name": "岳阳楼",
+      "type": "landmark",
+      "aliases": [],
+      "modernName": "岳阳楼",
+      "coordinates": [
+        113.13,
+        29.37
+      ],
+      "description": "著名楼阁，位于今湖南岳阳，洞庭湖畔",
+      "poems": [
+        {
+          "poem_id": 114,
+          "title": "登岳阳楼",
+          "author": "杜甫",
+          "content": "昔闻洞庭水，今上岳阳楼。\n吴楚东南坼，乾坤日夜浮。\n亲朋无一字，老病有孤舟。\n戎马关山北，凭轩涕泗流。",
+          "relevant_lines": [
+            "昔闻洞庭水，今上岳阳楼。"
+          ],
+          "keyword": "岳阳楼"
+        }
+      ]
+    },
+    {
+      "id": "hanshansi",
+      "name": "寒山寺",
+      "type": "landmark",
+      "aliases": [],
+      "modernName": "寒山寺",
+      "coordinates": [
+        120.57,
+        31.30
+      ],
+      "description": "著名寺庙，位于今江苏苏州",
+      "poems": [
+        {
+          "poem_id": 273,
+          "title": "枫桥夜泊",
+          "author": "张继",
+          "content": "月落乌啼霜满天，江枫渔火对愁眠。\n姑苏城外寒山寺，夜半钟声到客船。",
+          "relevant_lines": [
+            "姑苏城外寒山寺，夜半钟声到客船。"
+          ],
+          "keyword": "寒山寺"
+        }
+      ]
+    },
+    {
+      "id": "wuyixiang",
+      "name": "乌衣巷",
+      "type": "landmark",
+      "aliases": [
+        "朱雀桥"
+      ],
+      "modernName": "乌衣巷",
+      "coordinates": [
+        118.78,
+        32.02
+      ],
+      "description": "著名古巷，位于今江苏南京秦淮河畔",
+      "poems": [
+        {
+          "poem_id": 280,
+          "title": "乌衣巷",
+          "author": "刘禹锡",
+          "content": "朱雀桥边野草花，乌衣巷口夕阳斜。\n旧时王谢堂前燕，飞入寻常百姓家。",
+          "relevant_lines": [
+            "朱雀桥边野草花，乌衣巷口夕阳斜。"
+          ],
+          "keyword": "乌衣巷"
+        }
+      ]
+    },
+    {
+      "id": "tongquetai",
+      "name": "铜雀台",
+      "type": "landmark",
+      "aliases": [
+        "铜雀"
+      ],
+      "modernName": "铜雀台遗址",
+      "coordinates": [
+        114.62,
+        36.33
+      ],
+      "description": "曹操所建高台，位于今河北临漳",
+      "poems": [
+        {
+          "poem_id": 290,
+          "title": "赤壁",
+          "author": "杜牧",
+          "content": "折戟沉沙铁未销，自将磨洗认前朝。\n东风不与周郎便，铜雀春深锁二乔。",
+          "relevant_lines": [
+            "东风不与周郎便，铜雀春深锁二乔。"
+          ],
+          "keyword": "铜雀"
+        }
+      ]
+    },
+    {
+      "id": "jinguyuan",
+      "name": "金谷园",
+      "type": "landmark",
+      "aliases": [],
+      "modernName": "金谷园遗址",
+      "coordinates": [
+        112.45,
+        34.68
+      ],
+      "description": "西晋石崇所建园林，位于今河南洛阳",
+      "poems": [
+        {
+          "poem_id": 297,
+          "title": "金谷园",
+          "author": "杜牧",
+          "content": "繁华事散逐香尘，流水无情草自春。\n日暮东风怨啼鸟，落花犹似坠楼人。",
+          "relevant_lines": [],
+          "keyword": "金谷园"
+        }
+      ]
+    },
+    {
+      "id": "huaqingchi",
+      "name": "华清池",
+      "type": "landmark",
+      "aliases": [
+        "华清宫",
+        "骊宫"
+      ],
+      "modernName": "华清池",
+      "coordinates": [
+        109.21,
+        34.37
+      ],
+      "description": "唐代皇家温泉宫殿，位于今陕西西安临潼",
+      "poems": [
+        {
+          "poem_id": 71,
+          "title": "长恨歌",
+          "author": "白居易",
+          "content": "汉皇重色思倾国，御宇多年求不得。\n杨家有女初长成，养在深闺人未识。\n天生丽质难自弃，一朝选在君王侧。\n回眸一笑百媚生，六宫粉黛无颜色。\n春寒赐浴华清池，温泉水滑洗凝脂。",
+          "relevant_lines": [
+            "春寒赐浴华清池，温泉水滑洗凝脂。",
+            "骊宫高处入青云，仙乐风飘处处闻。"
+          ],
+          "keyword": "华清池"
+        }
+      ]
+    },
+    {
       "id": "luermen",
       "name": "鹿门山",
       "type": "mountain",
