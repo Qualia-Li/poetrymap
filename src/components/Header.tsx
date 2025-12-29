@@ -35,14 +35,22 @@ export default function Header({
       <div className="hidden md:flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-wider">唐诗三百首 · 地名地图</h1>
-          <div className="flex items-center gap-4 mt-1">
-            <p className="text-sm opacity-80">探索诗人笔下的山川河流与历史地理</p>
-            <nav className="flex gap-3 text-sm">
-              <Link href="/locations" className="opacity-80 hover:opacity-100 hover:underline">地点</Link>
-              <Link href="/poems" className="opacity-80 hover:opacity-100 hover:underline">诗词</Link>
-              <Link href="/about" className="opacity-80 hover:opacity-100 hover:underline">关于</Link>
-            </nav>
-          </div>
+          <p className="text-sm opacity-80 mt-1">探索诗人笔下的山川河流与历史地理</p>
+        </div>
+
+        <div className="flex items-center gap-4">
+          {/* 导航链接 */}
+          <nav className="flex gap-2">
+            <Link href="/locations" className="px-3 py-1.5 rounded-full text-sm bg-white/20 hover:bg-white/30 transition">
+              地点
+            </Link>
+            <Link href="/poems" className="px-3 py-1.5 rounded-full text-sm bg-white/20 hover:bg-white/30 transition">
+              诗词
+            </Link>
+            <Link href="/about" className="px-3 py-1.5 rounded-full text-sm bg-white/20 hover:bg-white/30 transition">
+              关于
+            </Link>
+          </nav>
         </div>
 
         <div className="flex items-center gap-4">
