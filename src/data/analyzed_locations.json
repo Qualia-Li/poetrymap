@@ -5243,6 +5243,149 @@
       ]
     },
     {
+      "id": "yumenguan",
+      "name": "玉门关",
+      "type": "landmark",
+      "aliases": [
+        "玉关",
+        "玉门"
+      ],
+      "modernName": "玉门关遗址",
+      "coordinates": [
+        93.8642,
+        40.3544
+      ],
+      "description": "汉代西域边关，丝绸之路重要关隘，位于今甘肃敦煌西北",
+      "poems": [
+        {
+          "poem_id": 38,
+          "title": "关山月",
+          "author": "李白",
+          "content": "明月出天山，苍茫云海间。\n长风几万里，吹度玉门关。\n汉下白登道，胡窥青海湾。\n由来征战地，不见有人还。\n戍客望边色，思归多苦颜。\n高楼当此夜，叹息未应闲。",
+          "relevant_lines": [
+            "长风几万里，吹度玉门关。"
+          ],
+          "keyword": "玉门关"
+        },
+        {
+          "poem_id": 41,
+          "title": "子夜四时歌：秋歌",
+          "author": "李白",
+          "content": "长安一片月，万户捣衣声。\n秋风吹不尽，总是玉关情。\n何日平胡虏，良人罢远征？",
+          "relevant_lines": [
+            "秋风吹不尽，总是玉关情。"
+          ],
+          "keyword": "玉关"
+        },
+        {
+          "poem_id": 277,
+          "title": "征人怨",
+          "author": "柳中庸",
+          "content": "岁岁金河复玉关，朝朝马策与刀环。\n三春白雪归青冢，万里黄河绕黑山。",
+          "relevant_lines": [
+            "岁岁金河复玉关，朝朝马策与刀环。"
+          ],
+          "keyword": "玉关"
+        },
+        {
+          "poem_id": 316,
+          "title": "出塞",
+          "author": "王之涣",
+          "content": "黄河远上白云间，一片孤城万仞山。\n羌笛何须怨杨柳？春风不度玉门关。",
+          "relevant_lines": [
+            "羌笛何须怨杨柳？春风不度玉门关。"
+          ],
+          "keyword": "玉门关"
+        }
+      ]
+    },
+    {
+      "id": "yangguan",
+      "name": "阳关",
+      "type": "landmark",
+      "aliases": [],
+      "modernName": "阳关遗址",
+      "coordinates": [
+        94.0594,
+        39.7439
+      ],
+      "description": "汉代西域边关，与玉门关并称'两关'，位于今甘肃敦煌西南",
+      "poems": [
+        {
+          "poem_id": 312,
+          "title": "渭城曲",
+          "author": "王维",
+          "content": "渭城朝雨浥轻尘，客舍青青柳色新。\n劝君更尽一杯酒，西出阳关无故人。",
+          "relevant_lines": [
+            "劝君更尽一杯酒，西出阳关无故人。"
+          ],
+          "keyword": "阳关"
+        }
+      ]
+    },
+    {
+      "id": "jiayuguan",
+      "name": "嘉峪关",
+      "type": "landmark",
+      "aliases": [
+        "嘉峪"
+      ],
+      "modernName": "嘉峪关",
+      "coordinates": [
+        98.2773,
+        39.7720
+      ],
+      "description": "明代长城西端起点，'天下第一雄关'，位于今甘肃嘉峪关市",
+      "poems": []
+    },
+    {
+      "id": "shanhaiguan",
+      "name": "山海关",
+      "type": "landmark",
+      "aliases": [
+        "榆关",
+        "临闾关"
+      ],
+      "modernName": "山海关",
+      "coordinates": [
+        119.7536,
+        39.9785
+      ],
+      "description": "长城东端起点，'天下第一关'，位于今河北秦皇岛",
+      "poems": []
+    },
+    {
+      "id": "juyongguan",
+      "name": "居庸关",
+      "type": "landmark",
+      "aliases": [
+        "居庸"
+      ],
+      "modernName": "居庸关",
+      "coordinates": [
+        116.0714,
+        40.2908
+      ],
+      "description": "长城重要关隘，北京北部门户，位于今北京昌平",
+      "poems": []
+    },
+    {
+      "id": "yanmenguan",
+      "name": "雁门关",
+      "type": "landmark",
+      "aliases": [
+        "雁门",
+        "西陉关"
+      ],
+      "modernName": "雁门关",
+      "coordinates": [
+        112.8714,
+        39.1675
+      ],
+      "description": "长城重要关隘，古代中原与塞北的交通要道，位于今山西代县",
+      "poems": []
+    },
+    {
       "id": "japan",
       "name": "日本",
       "type": "foreign",

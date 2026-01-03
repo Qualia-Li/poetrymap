@@ -367,7 +367,8 @@
       "hanshui",
       "dunhuang",
       "tianshan",
-      "qinghai"
+      "qinghai",
+      "yumenguan"
     ]
   },
   {
@@ -399,7 +400,8 @@
     "locations": [
       "changan",
       "xiongnu",
-      "dunhuang"
+      "dunhuang",
+      "yumenguan"
     ]
   },
   {
@@ -2749,7 +2751,8 @@
     "title": "征人怨",
     "locations": [
       "yellowriver",
-      "dunhuang"
+      "dunhuang",
+      "yumenguan"
     ]
   },
   {
@@ -3075,7 +3078,8 @@
     "title": "渭城曲",
     "locations": [
       "weihe",
-      "dunhuang"
+      "dunhuang",
+      "yangguan"
     ]
   },
   {
@@ -3116,7 +3120,8 @@
     "locations": [
       "yellowriver",
       "tubo",
-      "dunhuang"
+      "dunhuang",
+      "yumenguan"
     ]
   },
   {
