@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export async function generateStaticParams() {
   const poems = getPoems()
   const authors = Array.from(new Set(poems.map((p) => p.author)))
-  return authors.map((author) => ({ author: encodeURIComponent(author) }))
+  return authors.map((author) => ({ author }))
 }
 
 export default async function AuthorPage({ params }: Props) {
