@@ -107,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Poetry data from [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
-- Map tiles from [CARTO](https://carto.com/)
+- Map tiles from [OpenStreetMap](https://www.openstreetmap.org/copyright) (override with `NEXT_PUBLIC_MAP_TILE_URL` / `NEXT_PUBLIC_MAP_TILE_ATTRIBUTION`)
 - Font: [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC)
 
 ---
