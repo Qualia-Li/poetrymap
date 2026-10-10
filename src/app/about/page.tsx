@@ -138,7 +138,7 @@ export default function AboutPage() {
             <h2 className="text-xl font-bold text-primary mb-4">致谢</h2>
             <ul className="space-y-2 text-gray-700">
               <li>诗词数据来源：<a href="https://github.com/chinese-poetry/chinese-poetry" className="text-primary hover:underline">chinese-poetry</a></li>
-              <li>地图服务：<a href="https://carto.com/" className="text-primary hover:underline">CARTO</a></li>
+              <li>地图服务：<a href="https://www.openstreetmap.org/copyright" className="text-primary hover:underline">OpenStreetMap</a></li>
               <li>字体：<a href="https://fonts.google.com/noto/specimen/Noto+Serif+SC" className="text-primary hover:underline">Noto Serif SC</a></li>
             </ul>
           </section>

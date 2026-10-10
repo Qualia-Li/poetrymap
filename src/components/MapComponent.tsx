@@ -88,11 +88,16 @@ export default function MapComponent({
       maxZoom: 12,
     })
 
-    // 使用古典风格的地图
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 20,
+    // 底图：默认使用无需 API key 的 OpenStreetMap 瓦片（CARTO 现需 API key），
+    // 可通过 NEXT_PUBLIC_MAP_TILE_URL / NEXT_PUBLIC_MAP_TILE_ATTRIBUTION 替换为其他瓦片服务
+    const customTileUrl = process.env.NEXT_PUBLIC_MAP_TILE_URL
+    L.tileLayer(customTileUrl || 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        process.env.NEXT_PUBLIC_MAP_TILE_ATTRIBUTION ||
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+      // 默认瓦片色彩较重，淡化以保持古典浅色风格
+      className: customTileUrl ? '' : 'muted-tiles',
     }).addTo(map)
 
     mapInstanceRef.current = map
